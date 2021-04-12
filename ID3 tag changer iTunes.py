@@ -10,13 +10,13 @@ import os
 from urllib.parse import unquote
 import plistlib
 
-OldLocs = glob.glob(r"C:\Users\Owen\Music\iTunes\iTunes Media\Music\**\*.mp3", recursive = True)#Directory to search for mp3 files
-dst = r"C:\Users\Owen\Music\iTunes\ID3 Tag Edits Destination Folder\ "#Where those mp3 files are gonna go
+OldLocs = glob.glob(r"C:\Users\FezMaster\Music\iTunes\iTunes Media\Music\**\*.mp3", recursive = True)#Change this file address to whereever your iTunes music library is located.
+dst = r"C:\Users\FezMaster\Music\iTunes\ID3 Tag Edits Destination Folder\ "#Change this to the address of your destination folder.
 dst = dst[:-1]
 samenamecount = {}
 filescopied = 0
 
-data=plistlib.load(open(r"C:\Users\Owen\Music\Library.plist", "rb"))
+data=plistlib.load(open(r"C:\Users\FezMaster\Music\Library.plist", "rb"))#Change this to wherever you've saved your exported iTunes library. Make sure it's a plist file, not xml.
 tracks=list(map(lambda a: a[1], data['Tracks'].items()))#List of dictionaries containing song data
 
 def getSongInfo(path):
