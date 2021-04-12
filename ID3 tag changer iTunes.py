@@ -55,8 +55,8 @@ for element in OldLocs:
 
 #The code below will change the album art as well, which is why I don't want to delete it. May come in handy later.
 
-# filez = glob.glob(r"C:\Users\Owen\Music\iTunes\iTunes Media\Music\100 gecs\**\*.mp3", recursive = True)
-# dst = r"C:\Users\Owen\Music\iTunes\ID3 Tag Edits Destination Folder\ "
+# filez = glob.glob(r"C:\Users\FezMaster\Music\iTunes\iTunes Media\Music\100 gecs\**\*.mp3", recursive = True)
+# dst = r"C:\Users\FezMaster\Music\iTunes\ID3 Tag Edits Destination Folder\ "
 # dst = dst[:-1]
 
 # for element in filez: #This section copies the mp3 files to another location, renaming the copied files in the process.
@@ -74,7 +74,7 @@ for element in OldLocs:
     # mp3tags['album'] = ['bruh sound effect pack vol. 1']
     # mp3tags.save(v2_version=3)
     
-    # albumart = open(rb'C:\Users\Owen\Pictures\billdab4.png', 'rb')#This section changes the album art
+    # albumart = open(rb'C:\Users\FezMaster\Pictures\billdab4.png', 'rb')#This section changes the album art
     # mp3tags = EasyMP3(dstnew, ID3=ID3)
     # mp3tags.tags.delall("APIC")
     # mp3tags.save(v2_version=3)
